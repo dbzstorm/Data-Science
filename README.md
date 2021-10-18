@@ -1,2 +1,2 @@
 # Data Science
- alls the tools and project done by me
+ All the tools and project done by me
