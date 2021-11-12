@@ -1,0 +1,19 @@
+Sql Triggers
+
+
+ex 1
+CREATE TRIGGERS >triggername<
+BEFORE INSERT ON characters(TABLE NAME)
+FOR EACH ROW
+SET NEW.characters_name=UPPER(NEW.character_name);
+
+--
+
+ex2
+CREATE TRIGGERS >triggername<
+BEFORE UPDATE ON characters
+FOR EACH ROW
+SET NEW.characters_name=LOWER(NEW.character_name);
+
+FOR DELETING TRIGGER
+DROP TRIGGER IF EXIST >TRIGGERNAME<
